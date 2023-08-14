@@ -1,0 +1,458 @@
+@import url('https://fonts.cdnfonts.com/css/sotis');
+
+/*font-family: 'Sotis', sans-serif;*/
+
+@import url('https://fonts.cdnfonts.com/css/dysfunctional');
+
+/* font-family: 'Dysfunctional', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/angelliey');
+
+/* font-family: 'Angelliey', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/imperium-serif');
+
+/* font-family: 'ImperiumSerif', sans-serif; */
+
+/*PRIMER SCROLL*/
+
+@media screen and (min-width: 320px){
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(./IMG/fondo.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.title {
+    font-family: 'Angelliey', sans-serif;
+    font-size: 33.9px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+h1  {
+    background-image: linear-gradient(to bottom, #760b21, #8d193f, #a02b60, #ad4085, #b458ab);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .1px whitesmoke;
+    color: transparent;
+}
+
+.logo   {
+    margin-left: 90px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: rgba(250, 235, 215, 0.611);
+    border-radius: 120px;
+    padding: 15px;
+}
+
+.first_nav li a  {
+    margin: 25px;
+    margin-bottom: 250px;
+}
+
+.first_nav {
+    margin-top: 40px;
+    display: flex;
+    margin-left: 70px;
+}
+
+.first_nav li {
+    display: inline-block;
+    margin: 10px 15px;
+    list-style: none;
+    
+}
+
+.first_nav a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'ImperiumSerif', sans-serif;
+    font-size: 15px;
+    background-color: rgba(250, 235, 215, 0.611);
+    border-radius: 15px 50px 30px;
+    padding: 5px;
+}
+   
+  
+span:hover {
+    color: rgb(200, 37, 37);
+    transition: 0.5s ease all;
+    opacity: 0.5;
+    border: transparent;
+}
+
+}
+
+@media screen and (min-width: 480px) {
+
+    .title  {
+        font-size: 54px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .logo   {
+        margin-top: -50px;
+        margin-left: 170px;
+    }
+
+    .first_nav ul {
+        margin: 15px;
+    }
+
+    .first_nav li   {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .title  {
+        font-size: 5rem;
+        margin-left: 50px;
+    }
+
+    .logo{
+        margin-top: -100px;
+        margin-left: 300px;
+        width: 150px;
+        height: 150px;
+        border-radius: 180px;
+        padding: 25px;
+    }
+
+    .first_nav  {
+        margin-left: 30px;
+    }
+    
+}
+
+/*FIN PRIMER SCROLL*/
+
+/*SEGUNDO SCROLL*/
+
+@media screen and (min-width: 320px) {
+
+.first_section  {
+    background-image: linear-gradient(to bottom, #760b207c, #8d194072, #a02b6079, #ad408577, #b458ab7d) , url(./nails/botellitas1.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gallery {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: absolute;
+    margin: 85px;
+    z-index: 2;
+}
+
+.gallery img {
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+
+.nail_1 {
+    margin-left: -170px;
+}
+
+.nail_2 {
+    margin-left: 30px;
+}
+
+.nail_3 {
+    margin-left: 170px;
+}
+
+.title_1 {
+    padding: 50px 20px 10px ;
+    text-align: center;
+    font-family: 'ImperiumSerif', sans-serif;
+    font-size: 30px;
+    color: antiquewhite;
+    z-index: 3;
+
+}
+
+/*wave*/
+
+.wave {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: #cfddeb62;
+    bottom: 386.4px; /*modifico aqui para el height del navegador*/
+    z-index: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: rgba(255, 182, 193, 0.49);
+    right: -1.5%;
+    top: 60%;
+    z-index: -1;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #863ec183;
+    left: -1.5%;
+    top: 40%;
+    z-index: -1;
+  }
+
+/*fin wave*/
+}
+
+@media screen and (min-width: 480px) {
+
+    .first_section  {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .title_1    {
+        font-size: 35px;
+        text-align: center;
+        width: 30px;
+        height: 20px;
+        margin-bottom: 50px;
+        margin-left: 80px;
+        display: flex;
+        justify-content: center;
+        z-index: 4;
+        position: relative;
+    }
+
+    .gallery    {
+        margin-top: -5px;
+    }
+
+    .gallery img   {
+        width: 170px;
+        height: 170px;
+
+    }
+
+    .nail_1 {
+        margin-left: 280px;
+        margin-top: -30px;
+    }
+
+    .nail_2 {
+        margin-left: 10px;
+    }
+
+    .nail_3 {
+        margin-left: 210px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .first_section  {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+
+
+    .title_1    {
+        font-size: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .nail_1 {
+        margin: 0 auto;
+    }
+
+    .nail_2 {
+        margin: 0 auto;
+    }
+
+    .nail_3 {
+        margin: 0 auto;
+    }
+
+    .gallery img {
+        display: inline;
+        margin-top: 650px;
+        padding: 10px;
+    }
+
+    .gallery    {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+     
+}
+
+/*FIN SEGUNDO SCROLL*/
+
+/*INICIO TERCER SCROLL*/
+
+@media screen and (min-width: 320px) {
+
+    .second_section {
+        max-height: 100vh;
+        max-width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title_2    {
+        font-family: 'ImperiumSerif', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        display: inline-block;
+        background-color: #760b2077;
+        border-radius: 50px;
+        padding: 10px;
+        color: antiquewhite;
+    }
+
+    .title_3 {
+        font-family: 'ImperiumSerif', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        display: inline-block;
+        align-items: flex-end;
+        padding: 5px;
+        margin-top: 70px;
+        color: #ac0a9b;
+        -webkit-text-stroke: .1px whitesmoke;
+        background-color: rgba(19, 18, 18, 0.466);
+        border-radius: 20px;
+    }
+
+    .social_nets    {
+        background-color: rgba(19, 18, 18, 0.466);
+        display: flex;
+        justify-content: space-around; 
+        padding: 5px;
+        margin-top: 340px;
+    }
+
+    video   {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+
+    .title_2    {
+        font-size: 3rem;
+        margin-left: 10px;
+    }
+
+    .title_3    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .social_nets    {
+        margin-top: 330px;
+        padding: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .second_section {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-content: center;
+    }
+
+    .title_2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .title_3    {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .social_nets  {
+        margin-top: 380px;
+        padding: 3px;
+    }
+
+    video { 
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+/*FIN TERCER SCROLL*/
